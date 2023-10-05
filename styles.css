@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Jost:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: #F9F8F4;
+    width: 100vw;
+    height: 100vh;
+}
+
+input:focus {
+    outline: none;
+}
+.containerTop {
+    max-width: 1140px;
+    margin: 4rem auto 4rem auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    line-height: 1.4;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+}
+.containerBottom {
+    max-width: 1140px;
+    margin: 1rem auto;
+    /* border: 1px solid black; */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.quoteInfo h2 {
+    color: rgb(73, 69, 57);
+    margin-bottom: 4rem;
+}
+.addQuoteSection {
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+.addQuoteSection label {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    display: block;
+    color: rgb(73, 69, 57);
+}
+.quoteText {
+    border: none;
+    background: #ECE8DF;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0.7rem;
+}
+
+.addQuoteSection button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;;
+    border: none;
+    background: rgb(145, 132, 84);
+    color: ivory;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.quoteInfo {
+    padding: 1rem;
+}
+.quote {
+    margin-bottom: 1rem;
+    max-width: 35rem;
+    color:rgb(130, 128, 124);
+}
+
+
+.author {
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 0.7rem;
+    color: rgb(73, 69, 57)
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background: rgb(145, 132, 84);
+    color: ivory;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+
+/* containerBottom */
+.quoteCard {
+    background: #ECE8DF;
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+.addedQuote{
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color:rgb(130, 128, 124);
+}
+.addedQuoteAuthor {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    color: rgb(73, 69, 57)
+}
+
+
+/* Search Quotes */
+.searchQuotesSection {
+    margin-top: 3rem;
+}
+.searchQuotesSection input {
+    border: none;
+    background: #ECE8DF;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+

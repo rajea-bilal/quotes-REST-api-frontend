@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Quotes API</title>
+</head>
+<body>
+
+    <!-- <h1>Choose quote of your choice</h1> -->
+    <section class="containerTop">
+        
+        <div class="quoteInfo">
+            <h2>Inspiring words to lighten your path</h2>
+            <p class="quote">"Your identity emerges out of your habits"</p>
+            <h4 class="author">James Clear</h4>
+    
+           
+
+            <div class="searchQuotesSection">
+                 <button type="button" class="btn getQuoteBtn">Random Quote</button>
+                <button type="button" class="btn searchBtn">Search</button>
+                <input type="text" placeholder="Search..." class="searchInput">
+            </div>
+
+        </div>
+
+        <div class="addQuoteSection">
+            <form>
+                <label class="quote-label" for="quote">Add Quote</label>
+                <textarea class="quoteText" name="quoteText" id="quote" placeholder="Add quote"></textarea>
+
+                <label class="quote-author" for="quote-author">Author</label>
+                <input class="quoteText" type="text" name="quoteAuthor" id="quote-author" placeholder="Author">
+
+                <label class="quote-cat" for="quote-cat">Category</label>
+                <input class="quoteText" type="text" name="quoteCat" id="quote-cat" placeholder="Category">
+
+               <button type="button" class="addQuote">Add</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="containerBottom">
+     
+
+
+    </section>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
