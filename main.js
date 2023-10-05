@@ -13,12 +13,14 @@ const fetchLink = 'http://localhost:5000';
 const searchBtn = document.querySelector('.searchBtn')
 
 
+// Default quote when page loads
 function displayToDomMain(quoteObj) {
     defaultQuote.textContent = quoteObj.quote
     defaultAuthor.textContent = quoteObj.author
 }
 
 
+// random quote
 getQuoteBtn.addEventListener("click", async (event) => {
     const response = await fetch(`${fetchLink}/random-quote`)
 
@@ -30,12 +32,14 @@ getQuoteBtn.addEventListener("click", async (event) => {
     displayToDomMain(data)
 })
 
-
+// Display added quote to DOM
 function displayToDOMBottom(quoteObject) {
     console.log(quoteObject)
     let displayedQuote;
 
     let quoteLength = quoteObject.quote.length
+
+    // functionality to check length of quote, if greater than 200, slicing it, otherwise displaying it as is
     if(quoteLength > 200) {
         displayedQuote = quoteObject.quote.slice(0, 150) + '...'
     } else {
@@ -108,7 +112,6 @@ addQuote.addEventListener("click", async (event) => {
 
 
 // search functionality
-
 searchBtn.addEventListener('click', async (event) => {
     let searchQuery = document.querySelector('.searchInput').value
     const fullURL = `${fetchLink}/quotes/search?q=${searchQuery}`
@@ -121,4 +124,5 @@ console.log(fullURL)
    const data = await response.json()
    console.log(data)
 })
+
 
